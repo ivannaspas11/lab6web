@@ -1,0 +1,257 @@
+/* базовий скид і налаштування BODY */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* футер притискається до низу */
+}
+
+/* спец клас для вертикального центрування сторінок з формами */
+.form-page {
+  justify-content: center;
+}
+
+/* стилі форм */
+.form-container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.profile-container {
+  max-width: 500px; /* трохи ширше для профілю */
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+/* селектори за атрибутом */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+
+/* псевдокласи для фокусу */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-color: #3498db;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #2980b9;
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+/*для резюме*/
+.resume-main {
+  width: 90%;
+  max-width: 800px;
+  background: #fff;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* відносні одиниці виміру для типографіки */
+.resume-main h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5em;
+  color: #2c3e50;
+}
+
+.resume-main h2 {
+  font-size: 1.6rem;
+  margin-top: 1.2em;
+  margin-bottom: 0.8em;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 0.3em;
+}
+
+.resume-main h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+}
+
+.resume-main p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+/* оформлення списків навичок */
+.skills-list {
+  padding-left: 2rem;
+}
+
+.skills-list li {
+  line-height: 1.8;
+}
+
+.skills-list li:nth-child(1) {
+  color: #e74c3c;
+  font-weight: 700;
+}
+
+.skills-list li:nth-child(2) {
+  color: #8e44ad;
+  font-weight: 600;
+}
+
+.skills-list li:nth-child(3) {
+  color: #27ae60;
+  font-weight: 500;
+}
+
+/* 2 додатк завд */
+.site-footer {
+  width: 100%;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  border-top: 5px solid #3498db;
+  padding: 2rem 1rem 1rem;
+  margin-top: auto; /* притиск футера до низу стор */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  margin-bottom: 1.5rem;
+  min-width: 200px;
+}
+
+.footer-column h4 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-column ul {
+  list-style-type: none; /* скид маркерів */
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column a {
+  color: #bdc3c7;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #34495e;
+  font-size: 0.9rem;
+}
+
+/* розклад*/
+.schedule-table {
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-table caption {
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #bdc3c7;
+  padding: 15px;
+  text-align: center;
+}
+
+.schedule-table thead th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* чергування рядків */
+.schedule-table tbody tr:nth-child(even) {
+  background-color: #f2f6f8;
+}
+
+.schedule-table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.schedule-table .window {
+  color: #999;
+  font-style: italic;
+}

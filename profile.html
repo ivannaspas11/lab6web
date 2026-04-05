@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Редагування профілю</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="form-page">
+    <div class="form-container profile-container">
+      <h2>Редагування профілю</h2>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="first_name">Ім'я</label>
+          <input type="text" id="first_name" name="first_name" value="Тарас" />
+        </div>
+        <div class="form-group">
+          <label for="last_name">Прізвище</label>
+          <input type="text" id="last_name" name="last_name" value="Шевченко" />
+        </div>
+        <div class="form-group">
+          <label for="login">Логін</label>
+          <input type="text" id="login" name="login" value="taras_shevchenko" />
+        </div>
+        <div class="form-group">
+          <label for="email">Електронна пошта</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value="shevchenko@example.com"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Пароль</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            value="********"
+          />
+        </div>
+        <div class="form-group">
+          <label for="faculty">Факультет</label>
+          <input
+            type="text"
+            id="faculty"
+            name="faculty"
+            value="Комп'ютерних наук"
+          />
+        </div>
+        <div class="form-group">
+          <label for="group">Група</label>
+          <input type="text" id="group" name="group" value="КН-123" />
+        </div>
+        <div class="form-group">
+          <label for="city">Місто</label>
+          <input type="text" id="city" name="city" value="Харків" />
+        </div>
+        <div class="form-group">
+          <label for="about">Про себе</label>
+          <textarea id="about" name="about" rows="3">
+Студент НТУ "ХПІ"</textarea
+          >
+        </div>
+        <button type="submit" class="submit-btn">Зберегти зміни</button>
+      </form>
+    </div>
+  </body>
+</html>
